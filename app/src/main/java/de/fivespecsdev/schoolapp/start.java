@@ -6,10 +6,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
+
+import java.lang.reflect.Array;
 
 
-public class start extends Activity {
+public class start extends Activity implements AdapterView.OnItemSelectedListener {
+
+    private Spinner ChClassSpinner;
 
 
 
@@ -18,7 +25,37 @@ public class start extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        
+        String[] test = getResources().getStringArray(R.array.Faecher);
+
+        ChClassSpinner = (Spinner)findViewById(R.id.ChClassSpinner);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(start.this,
+                android.R.layout.simple_spinner_item, test);
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ChClassSpinner.setAdapter(adapter);
+        ChClassSpinner.setOnItemSelectedListener(this);
+    }
+
+    public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
+
+        switch (position) {
+            case 0:
+
+                break;
+            case 1:
+                Intent startDeutsch = new Intent(start.this, Deutsch.class);
+                startActivity(startDeutsch);
+                break;
+            case 2:
+                // Whatever you want to happen when the third item gets selected
+                break;
+
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 
 

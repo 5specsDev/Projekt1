@@ -5,6 +5,20 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_start">start</string>
-
+    <string name="title_activity_deutsch">Deutsch</string>
+    <string-array name="Faecher">
+        <item>Start</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>Englisch</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
+    </string-array>
 
 </resources>
