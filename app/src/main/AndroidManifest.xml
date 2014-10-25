@@ -18,10 +18,5 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="de.fivespecsdev.schoolapp.FachAuswahl"
-            android:label="@string/title_activity_fach_auswahl" >
-        </activity>
-    </application>
 
 </manifest>
