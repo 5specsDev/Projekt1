@@ -17,13 +17,15 @@ import java.lang.reflect.Array;
 public class start extends Activity implements AdapterView.OnItemSelectedListener {
 
     private Spinner ChClassSpinner;
-
+    Button StartIPMSG;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
+
+        StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
 
         String[] test = getResources().getStringArray(R.array.Faecher);
 
@@ -34,6 +36,14 @@ public class start extends Activity implements AdapterView.OnItemSelectedListene
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ChClassSpinner.setAdapter(adapter);
         ChClassSpinner.setOnItemSelectedListener(this);
+
+        StartIPMSG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openIPMSG = getPackageManager().getLaunchIntentForPackage("com.coderplus.android.ipmsg");
+                startActivity(openIPMSG);
+            }
+        });
     }
 
     public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
