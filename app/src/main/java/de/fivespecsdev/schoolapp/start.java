@@ -18,6 +18,7 @@ public class start extends Activity implements AdapterView.OnItemSelectedListene
 
     private Spinner ChClassSpinner;
     Button StartIPMSG;
+    Button AdminAccess;
 
 
     @Override
@@ -26,6 +27,7 @@ public class start extends Activity implements AdapterView.OnItemSelectedListene
         setContentView(R.layout.activity_start);
 
         StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
+        AdminAccess = (Button) findViewById(R.id.BtnAdminAccess);
 
         String[] test = getResources().getStringArray(R.array.Faecher);
 
@@ -42,6 +44,14 @@ public class start extends Activity implements AdapterView.OnItemSelectedListene
             public void onClick(View v) {
                 Intent openIPMSG = getPackageManager().getLaunchIntentForPackage("com.coderplus.android.ipmsg");
                 startActivity(openIPMSG);
+            }
+        });
+
+        AdminAccess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openPasswordCheck = new Intent(start.this, AdminPasswordCheck.class);
+                startActivity(openPasswordCheck);
             }
         });
     }

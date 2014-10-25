@@ -22,7 +22,17 @@
         <activity
             android:name=".Deutsch"
             android:label="@string/title_activity_deutsch"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".AdminPasswordCheck"
+            android:label="@string/title_activity_admin_password_check"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".AdminAccess"
+            android:label="@string/title_activity_admin_access"
+            android:theme="@style/AppTheme" >
         </activity>
     </application>
 
