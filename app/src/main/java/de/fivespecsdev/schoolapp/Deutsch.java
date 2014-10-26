@@ -25,11 +25,11 @@ public class Deutsch extends Activity implements AdapterView.OnItemSelectedListe
         StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
 
 
-        String[] test = getResources().getStringArray(R.array.Faecher);
+        String[] faecher = getResources().getStringArray(R.array.FaecherDeutsch);
 
         ChClassSpinner = (Spinner)findViewById(R.id.ChClassSpinner);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(Deutsch.this,
-                android.R.layout.simple_spinner_item, test);
+                android.R.layout.simple_spinner_item, faecher);
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ChClassSpinner.setAdapter(adapter);
@@ -50,12 +50,11 @@ public class Deutsch extends Activity implements AdapterView.OnItemSelectedListe
 
         switch (position) {
             case 0:
-               Intent startStart = new Intent(Deutsch.this, start.class);
-               startActivity(startStart);
+
                 break;
             case 1:
-                //Intent startDeutsch = new Intent(start.this, Deutsch.class);
-                //startActivity(startDeutsch);
+                Intent startStart = new Intent(Deutsch.this, start.class);
+                startActivity(startStart);
                 break;
             case 2:
                 // Whatever you want to happen when the third item gets selected
