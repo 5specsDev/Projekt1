@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 
 
-public class Deutsch extends Activity {
+public class Deutsch extends Activity implements AdapterView.OnItemSelectedListener {
 
     private Spinner ChClassSpinner;
     Button StartIPMSG;
@@ -69,7 +69,7 @@ public class Deutsch extends Activity {
 
     }
 
-}
+
 
 
     @Override
