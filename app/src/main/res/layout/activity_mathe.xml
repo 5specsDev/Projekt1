@@ -9,4 +9,52 @@
     tools:context="de.fivespecsdev.schoolapp.Mathe">
 
 
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ChClassSpinner"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dropdown"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalender"
+        android:id="@+id/BtnStartCal"
+        android:layout_below="@+id/ChClassSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hefter"
+        android:id="@+id/BtnStartFolder"
+        android:layout_alignTop="@+id/BtnStartCal"
+        android:layout_toRightOf="@+id/ChClassSpinner"
+        android:layout_toEndOf="@+id/ChClassSpinner"
+        android:layout_marginLeft="63dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buch"
+        android:id="@+id/BtnStartBook"
+        android:layout_alignTop="@+id/BtnStartFolder"
+        android:layout_toRightOf="@+id/BtnStartFolder"
+        android:layout_toEndOf="@+id/BtnStartFolder"
+        android:layout_marginLeft="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IPMSG"
+        android:id="@+id/BtnStartIPMSG"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
