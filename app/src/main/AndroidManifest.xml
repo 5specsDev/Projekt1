@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".start"
+            android:name="de.fivespecsdev.schoolapp.start"
             android:label="@string/app_name"
             android:theme="@style/AppTheme" >
             <intent-filter>
@@ -20,19 +20,59 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Deutsch"
+            android:name="de.fivespecsdev.schoolapp.Deutsch"
             android:label="@string/title_activity_deutsch"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name=".AdminPasswordCheck"
+            android:name="de.fivespecsdev.schoolapp.AdminPasswordCheck"
             android:label="@string/title_activity_admin_password_check"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name=".AdminAccess"
+            android:name="de.fivespecsdev.schoolapp.AdminAccess"
             android:label="@string/title_activity_admin_access"
             android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name="de.fivespecsdev.schoolapp.Mathe"
+            android:label="@string/title_activity_mathe" >
+        </activity>
+        <activity
+            android:name="de.fivespecsdev.schoolapp.English"
+            android:label="@string/title_activity_english" >
+        </activity>
+        <activity
+            android:name="de.fivespecsdev.schoolapp.Biologie"
+            android:label="@string/title_activity_biologie" >
+        </activity>
+        <activity
+            android:name="de.fivespecsdev.schoolapp.Chemie"
+            android:label="@string/title_activity_chemie" >
+        </activity>
+        <activity
+            android:name="de.fivespecsdev.schoolapp.Geographie"
+            android:label="@string/title_activity_geographie" >
+        </activity>
+        <activity
+            android:name="de.fivespecsdev.schoolapp.Physik"
+            android:label="@string/title_activity_physik" >
+        </activity>
+        <activity
+            android:name="de.fivespecsdev.schoolapp.Geschichte"
+            android:label="@string/title_activity_geschichte" >
+        </activity>
+        <activity
+            android:name="de.fivespecsdev.schoolapp.Latein"
+            android:label="@string/title_activity_latein" >
+        </activity>
+        <activity
+            android:name="de.fivespecsdev.schoolapp.Franzoesisch"
+            android:label="@string/title_activity_franzoesisch" >
+        </activity>
+        <activity
+            android:name="de.fivespecsdev.schoolapp.Religion"
+            android:label="@string/title_activity_religion" >
         </activity>
     </application>
 

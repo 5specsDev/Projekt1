@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">SchoolApp</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_start">start</string>
     <string name="title_activity_deutsch">Deutsch</string>
@@ -24,5 +23,15 @@
 
     <string name="title_activity_admin_password_check">AdminPasswordCheck</string>
     <string name="title_activity_admin_access">AdminAccess</string>
+    <string name="title_activity_mathe">Mathe</string>
+    <string name="title_activity_english">English</string>
+    <string name="title_activity_biologie">Biologie</string>
+    <string name="title_activity_chemie">Chemie</string>
+    <string name="title_activity_geographie">Geographie</string>
+    <string name="title_activity_physik">Physik</string>
+    <string name="title_activity_geschichte">Geschichte</string>
+    <string name="title_activity_latein">Latein</string>
+    <string name="title_activity_franzoesisch">Franzoesisch</string>
+    <string name="title_activity_religion">Religion</string>
 
 </resources>
