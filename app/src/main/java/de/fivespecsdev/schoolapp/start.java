@@ -29,11 +29,11 @@ public class start extends Activity implements AdapterView.OnItemSelectedListene
         StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
         AdminAccess = (Button) findViewById(R.id.BtnAdminAccess);
 
-        String[] test = getResources().getStringArray(R.array.Faecher);
+        String[] faecher = getResources().getStringArray(R.array.Faecher);
 
         ChClassSpinner = (Spinner)findViewById(R.id.ChClassSpinner);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(start.this,
-                android.R.layout.simple_spinner_item, test);
+                android.R.layout.simple_spinner_item, faecher);
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ChClassSpinner.setAdapter(adapter);
