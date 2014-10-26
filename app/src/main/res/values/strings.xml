@@ -10,7 +10,7 @@
         <item>Start</item>
         <item>Deutsch</item>
         <item>Mathe</item>
-        <item>Englisch</item>
+        <item>English</item>
         <item>Biologie</item>
         <item>Geographie</item>
         <item>Chemie</item>
@@ -20,6 +20,173 @@
         <item>Französisch</item>
         <item>Religion</item>
     </string-array>
+
+    <string-array name="FaecherDeutsch">
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
+        <item>Start</item>
+    </string-array>
+
+    <string-array name="FaecherMathe">
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
+        <item>Deutsch</item>
+        <item>Start</item>
+    </string-array>
+
+    <string-array name="FaecherEnglish">
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>Start</item>
+    </string-array>
+
+    <string-array name="FaecherBiologie">
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Start</item>
+    </string-array>
+
+    <string-array name="FaecherGeographie">
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Start</item>
+    </string-array>
+
+    <string-array name="FaecherChemie">
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Start</item>
+    </string-array>
+
+    <string-array name="FaecherPhysik">
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Start</item>
+    </string-array>
+
+    <string-array name="FaecherGeschichte">
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Start</item>
+    </string-array>
+
+    <string-array name="FaecherLatein">
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Start</item>
+    </string-array>
+
+    <string-array name="FaecherFranz">
+        <item>Französisch</item>
+        <item>Religion</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Start</item>
+    </string-array>
+
+    <string-array name="FaecherReligion">
+        <item>Religion</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Start</item>
+    </string-array>
+
+
 
     <string name="title_activity_admin_password_check">AdminPasswordCheck</string>
     <string name="title_activity_admin_access">AdminAccess</string>

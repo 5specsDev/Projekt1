@@ -50,14 +50,17 @@ public class Deutsch extends Activity implements AdapterView.OnItemSelectedListe
 
         switch (position) {
             case 0:
-
+                //
                 break;
             case 1:
-                Intent startStart = new Intent(Deutsch.this, start.class);
-                startActivity(startStart);
+                //
                 break;
             case 2:
                 // Whatever you want to happen when the third item gets selected
+                break;
+            case 11:
+                Intent startStart = new Intent(Deutsch.this, start.class);
+                startActivity(startStart);
                 break;
 
         }
