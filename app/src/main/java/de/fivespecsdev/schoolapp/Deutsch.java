@@ -53,10 +53,44 @@ public class Deutsch extends Activity implements AdapterView.OnItemSelectedListe
                 //
                 break;
             case 1:
-                //
+                Intent startMathe = new Intent(Deutsch.this, Mathe.class);
+                startActivity(startMathe);
                 break;
             case 2:
-                // Whatever you want to happen when the third item gets selected
+                Intent startEnglish = new Intent(Deutsch.this, English.class);
+                startActivity(startEnglish);
+                break;
+            case 3:
+                Intent startBiologie = new Intent(Deutsch.this, Biologie.class);
+                startActivity(startBiologie);
+                break;
+            case 4:
+                Intent startGeographie = new Intent(Deutsch.this, Geographie.class);
+                startActivity(startGeographie);
+                break;
+            case 5:
+                Intent startChemie = new Intent(Deutsch.this, Chemie.class);
+                startActivity(startChemie);
+                break;
+            case 6:
+                Intent startPhysik = new Intent(Deutsch.this, Physik.class);
+                startActivity(startPhysik);
+                break;
+            case 7:
+                Intent startGeschichte = new Intent(Deutsch.this, Geschichte.class);
+                startActivity(startGeschichte);
+                break;
+            case 8:
+                Intent startLatein = new Intent(Deutsch.this, Latein.class);
+                startActivity(startLatein);
+                break;
+            case 9:
+                Intent startFranzoesisch = new Intent(Deutsch.this, Franzoesisch.class);
+                startActivity(startFranzoesisch);
+                break;
+            case 10:
+                Intent startReligion = new Intent(Deutsch.this, Religion.class);
+                startActivity(startReligion);
                 break;
             case 11:
                 Intent startStart = new Intent(Deutsch.this, start.class);
