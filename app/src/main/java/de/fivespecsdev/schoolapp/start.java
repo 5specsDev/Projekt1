@@ -67,8 +67,47 @@ public class start extends Activity implements AdapterView.OnItemSelectedListene
                 startActivity(startDeutsch);
                 break;
             case 2:
-                // Whatever you want to happen when the third item gets selected
+                Intent startMathe = new Intent(start.this, Mathe.class);
+                startActivity(startMathe);
                 break;
+            case 3:
+                Intent startEnglish = new Intent(start.this, English.class);
+                startActivity(startEnglish);
+                break;
+            case 4:
+                Intent startBiologie = new Intent(start.this, Biologie.class);
+                startActivity(startBiologie);
+                break;
+            case 5:
+                Intent startGeographie = new Intent(start.this, Geographie.class);
+                startActivity(startGeographie);
+                break;
+            case 6:
+                Intent startChemie = new Intent(start.this, Chemie.class);
+                startActivity(startChemie);
+                break;
+            case 7:
+                Intent startPhysik = new Intent(start.this, Physik.class);
+                startActivity(startPhysik);
+                break;
+            case 8:
+                Intent startGeschichte = new Intent(start.this, Geschichte.class);
+                startActivity(startGeschichte);
+                break;
+            case 9:
+                Intent startLatein = new Intent(start.this, Latein.class);
+                startActivity(startLatein);
+                break;
+            case 10:
+                Intent startFranzoesisch = new Intent(start.this, Franzoesisch.class);
+                startActivity(startFranzoesisch);
+                break;
+            case 11:
+                Intent startReligion = new Intent(start.this, Religion.class);
+                startActivity(startReligion);
+                break;
+
+
 
         }
     }
