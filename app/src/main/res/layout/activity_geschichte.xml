@@ -20,32 +20,36 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kalender"
+        android:text=""
         android:id="@+id/BtnStartCal"
         android:layout_below="@+id/ChClassSpinner"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="63dp" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/calendar1"
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hefter"
+        android:text=""
         android:id="@+id/BtnStartFolder"
+        android:layout_toEndOf="@+id/BtnStartCal"
+        android:background="@drawable/folder1"
         android:layout_alignTop="@+id/BtnStartCal"
-        android:layout_toRightOf="@+id/ChClassSpinner"
-        android:layout_toEndOf="@+id/ChClassSpinner"
-        android:layout_marginLeft="63dp" />
+        android:layout_toRightOf="@+id/BtnStartCal"
+        android:layout_marginLeft="50dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buch"
+        android:text=""
         android:id="@+id/BtnStartBook"
-        android:layout_alignTop="@+id/BtnStartFolder"
-        android:layout_toRightOf="@+id/BtnStartFolder"
         android:layout_toEndOf="@+id/BtnStartFolder"
-        android:layout_marginLeft="50dp" />
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/book1"
+        android:layout_alignTop="@+id/BtnStartFolder"
+        android:layout_toRightOf="@+id/BtnStartFolder" />
 
     <Button
         android:layout_width="wrap_content"
