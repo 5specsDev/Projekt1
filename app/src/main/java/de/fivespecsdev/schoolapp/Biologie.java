@@ -105,6 +105,9 @@ public class Biologie extends Activity implements AdapterView.OnItemSelectedList
 
     }
 
+    @Override
+    public void onBackPressed() {
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -103,7 +103,9 @@ public class Latein extends Activity implements AdapterView.OnItemSelectedListen
 
     }
 
-
+    @Override
+    public void onBackPressed() {
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -105,7 +105,9 @@ public class Deutsch extends Activity implements AdapterView.OnItemSelectedListe
 
     }
 
-
+    @Override
+    public void onBackPressed() {
+    }
 
 
     @Override

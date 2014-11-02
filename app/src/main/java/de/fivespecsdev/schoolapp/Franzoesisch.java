@@ -105,6 +105,9 @@ public class Franzoesisch extends Activity implements AdapterView.OnItemSelected
 
     }
 
+    @Override
+    public void onBackPressed() {
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

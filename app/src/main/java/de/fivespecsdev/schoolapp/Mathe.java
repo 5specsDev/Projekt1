@@ -103,6 +103,9 @@ public class Mathe extends Activity implements AdapterView.OnItemSelectedListene
 
     }
 
+    @Override
+    public void onBackPressed() {
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

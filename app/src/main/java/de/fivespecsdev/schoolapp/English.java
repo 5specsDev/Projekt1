@@ -105,6 +105,9 @@ public class English extends Activity implements AdapterView.OnItemSelectedListe
 
     }
 
+    @Override
+    public void onBackPressed() {
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -105,7 +105,9 @@ public class Geographie extends Activity implements AdapterView.OnItemSelectedLi
 
     }
 
-
+    @Override
+    public void onBackPressed() {
+    }
 
 
     @Override

@@ -103,8 +103,11 @@ public class Chemie extends Activity implements AdapterView.OnItemSelectedListen
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
-    }    
+    }
 
+    @Override
+    public void onBackPressed() {
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

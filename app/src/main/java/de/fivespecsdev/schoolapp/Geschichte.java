@@ -102,7 +102,10 @@ public class Geschichte extends Activity implements AdapterView.OnItemSelectedLi
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
-    
+
+    @Override
+    public void onBackPressed() {
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
