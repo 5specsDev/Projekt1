@@ -13,7 +13,8 @@
             android:theme="@style/AppTheme"
             android:launchMode="singleTask"
             android:clearTaskOnLaunch="true"
-            android:stateNotNeeded="true">
+            android:stateNotNeeded="true"
+            android:screenOrientation="landscape">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,57 +41,70 @@
         <activity
             android:name="de.fivespecsdev.schoolapp.Deutsch"
             android:label="@string/title_activity_deutsch"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/AppTheme"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.AdminPasswordCheck"
             android:label="@string/title_activity_admin_password_check"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/AppTheme"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.AdminAccess"
             android:label="@string/title_activity_admin_access"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/AppTheme"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.Mathe"
-            android:label="@string/title_activity_mathe" >
+            android:label="@string/title_activity_mathe"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.English"
-            android:label="@string/title_activity_english" >
+            android:label="@string/title_activity_english"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.Biologie"
-            android:label="@string/title_activity_biologie" >
+            android:label="@string/title_activity_biologie"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.Chemie"
-            android:label="@string/title_activity_chemie" >
+            android:label="@string/title_activity_chemie"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.Geographie"
-            android:label="@string/title_activity_geographie" >
+            android:label="@string/title_activity_geographie"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.Physik"
-            android:label="@string/title_activity_physik" >
+            android:label="@string/title_activity_physik"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.Geschichte"
-            android:label="@string/title_activity_geschichte" >
+            android:label="@string/title_activity_geschichte"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.Latein"
-            android:label="@string/title_activity_latein" >
+            android:label="@string/title_activity_latein"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.Franzoesisch"
-            android:label="@string/title_activity_franzoesisch" >
+            android:label="@string/title_activity_franzoesisch"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.Religion"
-            android:label="@string/title_activity_religion" >
+            android:label="@string/title_activity_religion"
+            android:screenOrientation="landscape">
         </activity>
     </application>
 

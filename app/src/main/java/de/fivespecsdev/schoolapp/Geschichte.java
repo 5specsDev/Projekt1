@@ -16,12 +16,17 @@ public class Geschichte extends Activity implements AdapterView.OnItemSelectedLi
 
     private Spinner ChClassSpinner;
     Button StartIPMSG;
+    Button StartFolder;
+    Button StartBook;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geschichte);
+
         StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
+        StartFolder = (Button) findViewById(R.id.BtnStartFolder);
+        StartBook = (Button) findViewById(R.id.BtnStartBook);
 
         String[] faecher = getResources().getStringArray(R.array.FaecherGeschichte);
 
@@ -38,6 +43,22 @@ public class Geschichte extends Activity implements AdapterView.OnItemSelectedLi
             public void onClick(View v) {
                 Intent openIPMSG = getPackageManager().getLaunchIntentForPackage("com.coderplus.android.ipmsg");
                 startActivity(openIPMSG);
+            }
+        });
+
+        StartFolder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openFolder = getPackageManager().getLaunchIntentForPackage("com.metamoji.noteanytime");
+                startActivity(openFolder);
+            }
+        });
+
+        StartBook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openBook = getPackageManager().getLaunchIntentForPackage("com.adobe.reader");
+                startActivity(openBook);
             }
         });
     }

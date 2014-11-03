@@ -16,6 +16,8 @@ public class Chemie extends Activity implements AdapterView.OnItemSelectedListen
 
     private Spinner ChClassSpinner;
     Button StartIPMSG;
+    Button StartFolder;
+    Button StartBook;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,8 @@ public class Chemie extends Activity implements AdapterView.OnItemSelectedListen
         setContentView(R.layout.activity_chemie);
 
         StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
+        StartFolder = (Button) findViewById(R.id.BtnStartFolder);
+        StartBook = (Button) findViewById(R.id.BtnStartBook);
 
 
         String[] faecher = getResources().getStringArray(R.array.FaecherChemie);
@@ -40,6 +44,22 @@ public class Chemie extends Activity implements AdapterView.OnItemSelectedListen
             public void onClick(View v) {
                 Intent openIPMSG = getPackageManager().getLaunchIntentForPackage("com.coderplus.android.ipmsg");
                 startActivity(openIPMSG);
+            }
+        });
+
+        StartFolder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openFolder = getPackageManager().getLaunchIntentForPackage("com.metamoji.noteanytime");
+                startActivity(openFolder);
+            }
+        });
+
+        StartBook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openBook = getPackageManager().getLaunchIntentForPackage("com.adobe.reader");
+                startActivity(openBook);
             }
         });
 
