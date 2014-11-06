@@ -1,5 +1,6 @@
 package de.fivespecsdev.schoolapp;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,11 +11,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 
 
-public class Religion extends Activity implements AdapterView.OnItemSelectedListener{
+public class Religion extends Activity implements ActionBar.OnNavigationListener{
 
-    private Spinner ChClassSpinner;
+    
     Button StartIPMSG;
     Button StartFolder;
     Button StartBook;
@@ -24,19 +26,17 @@ public class Religion extends Activity implements AdapterView.OnItemSelectedList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_religion);
 
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+
+        SpinnerAdapter mSpinnerAdapter = ArrayAdapter.createFromResource(this,
+                R.array.FaecherReligion, android.R.layout.simple_spinner_dropdown_item);
+        actionBar.setListNavigationCallbacks(mSpinnerAdapter, this);
+
         StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
         StartFolder = (Button) findViewById(R.id.BtnStartFolder);
-        StartBook = (Button)findViewById(R.id.BtnStartBook);
-
-        String[] faecher = getResources().getStringArray(R.array.FaecherReligion);
-
-        ChClassSpinner = (Spinner)findViewById(R.id.ChClassSpinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(Religion.this,
-                android.R.layout.simple_spinner_item, faecher);
-
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        ChClassSpinner.setAdapter(adapter);
-        ChClassSpinner.setOnItemSelectedListener(this);
+        StartBook = (Button) findViewById(R.id.BtnStartBook);
 
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +45,8 @@ public class Religion extends Activity implements AdapterView.OnItemSelectedList
                 startActivity(openIPMSG);
             }
         });
+
+        
 
         StartFolder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,9 +65,11 @@ public class Religion extends Activity implements AdapterView.OnItemSelectedList
         });
     }
 
-    public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
 
-        switch (position) {
+
+    @Override
+    public boolean onNavigationItemSelected(int itemPosition, long itemId) {
+        switch (itemPosition) {
             case 0:
 
                 break;
@@ -110,19 +114,20 @@ public class Religion extends Activity implements AdapterView.OnItemSelectedList
                 startActivity(startFranzoesisch);
                 break;
             case 11:
+                Intent startReligion = new Intent(Religion.this, Religion.class);
+                startActivity(startReligion);
+                break;
+            case 12:
                 Intent startStart = new Intent(Religion.this, start.class);
                 startActivity(startStart);
                 break;
 
 
-
         }
+        return false;
     }
 
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-
-    }
+    
 
     @Override
     public void onBackPressed() {
@@ -149,4 +154,6 @@ public class Religion extends Activity implements AdapterView.OnItemSelectedList
 
         return super.onOptionsItemSelected(item);
     }
+
+   
 }

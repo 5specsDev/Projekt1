@@ -19,9 +19,11 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
+        <item>Start</item>
     </string-array>
 
     <string-array name="FaecherDeutsch">
+        <item>Deutsch</item>
         <item>Deutsch</item>
         <item>Mathe</item>
         <item>English</item>
@@ -38,6 +40,8 @@
 
     <string-array name="FaecherMathe">
         <item>Mathe</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
         <item>English</item>
         <item>Biologie</item>
         <item>Geographie</item>
@@ -47,12 +51,14 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
-        <item>Deutsch</item>
         <item>Start</item>
     </string-array>
 
     <string-array name="FaecherEnglish">
         <item>English</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
         <item>Biologie</item>
         <item>Geographie</item>
         <item>Chemie</item>
@@ -61,13 +67,15 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
-        <item>Deutsch</item>
-        <item>Mathe</item>
         <item>Start</item>
     </string-array>
 
     <string-array name="FaecherBiologie">
         <item>Biologie</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
         <item>Geographie</item>
         <item>Chemie</item>
         <item>Physik</item>
@@ -75,62 +83,59 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
-        <item>Deutsch</item>
-        <item>Mathe</item>
-        <item>English</item>
         <item>Start</item>
     </string-array>
 
     <string-array name="FaecherGeographie">
         <item>Geographie</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
         <item>Chemie</item>
         <item>Physik</item>
         <item>Geschichte</item>
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
-        <item>Deutsch</item>
-        <item>Mathe</item>
-        <item>English</item>
-        <item>Biologie</item>
         <item>Start</item>
     </string-array>
 
     <string-array name="FaecherChemie">
         <item>Chemie</item>
-        <item>Physik</item>
-        <item>Geschichte</item>
-        <item>Latein</item>
-        <item>Französisch</item>
-        <item>Religion</item>
         <item>Deutsch</item>
         <item>Mathe</item>
         <item>English</item>
         <item>Biologie</item>
         <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
         <item>Start</item>
     </string-array>
 
     <string-array name="FaecherPhysik">
         <item>Physik</item>
-        <item>Geschichte</item>
-        <item>Latein</item>
-        <item>Französisch</item>
-        <item>Religion</item>
         <item>Deutsch</item>
         <item>Mathe</item>
         <item>English</item>
         <item>Biologie</item>
         <item>Geographie</item>
         <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
         <item>Start</item>
     </string-array>
 
     <string-array name="FaecherGeschichte">
         <item>Geschichte</item>
-        <item>Latein</item>
-        <item>Französisch</item>
-        <item>Religion</item>
         <item>Deutsch</item>
         <item>Mathe</item>
         <item>English</item>
@@ -138,27 +143,15 @@
         <item>Geographie</item>
         <item>Chemie</item>
         <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
         <item>Start</item>
     </string-array>
 
     <string-array name="FaecherLatein">
         <item>Latein</item>
-        <item>Französisch</item>
-        <item>Religion</item>
-        <item>Deutsch</item>
-        <item>Mathe</item>
-        <item>English</item>
-        <item>Biologie</item>
-        <item>Geographie</item>
-        <item>Chemie</item>
-        <item>Physik</item>
-        <item>Geschichte</item>
-        <item>Start</item>
-    </string-array>
-
-    <string-array name="FaecherFranz">
-        <item>Französisch</item>
-        <item>Religion</item>
         <item>Deutsch</item>
         <item>Mathe</item>
         <item>English</item>
@@ -168,6 +161,24 @@
         <item>Physik</item>
         <item>Geschichte</item>
         <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
+        <item>Start</item>
+    </string-array>
+
+    <string-array name="FaecherFranz">
+        <item>Französisch</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
         <item>Start</item>
     </string-array>
 
@@ -183,6 +194,7 @@
         <item>Geschichte</item>
         <item>Latein</item>
         <item>Französisch</item>
+        <item>Religion</item>
         <item>Start</item>
     </string-array>
 

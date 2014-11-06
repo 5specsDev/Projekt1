@@ -132,7 +132,10 @@ public class start extends Activity implements ActionBar.OnNavigationListener {
                 Intent startReligion = new Intent(start.this, Religion.class);
                 startActivity(startReligion);
                 break;
-
+            case 12:
+                Intent startStart = new Intent(start.this, start.class);
+                startActivity(startStart);
+                break;
 
 
         }

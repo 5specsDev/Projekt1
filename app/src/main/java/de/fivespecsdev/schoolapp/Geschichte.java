@@ -1,5 +1,6 @@
 package de.fivespecsdev.schoolapp;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,11 +11,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 
 
-public class Geschichte extends Activity implements AdapterView.OnItemSelectedListener{
+public class Geschichte extends Activity implements ActionBar.OnNavigationListener{
 
-    private Spinner ChClassSpinner;
+    
     Button StartIPMSG;
     Button StartFolder;
     Button StartBook;
@@ -24,19 +26,17 @@ public class Geschichte extends Activity implements AdapterView.OnItemSelectedLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geschichte);
 
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+
+        SpinnerAdapter mSpinnerAdapter = ArrayAdapter.createFromResource(this,
+                R.array.FaecherGeschichte, android.R.layout.simple_spinner_dropdown_item);
+        actionBar.setListNavigationCallbacks(mSpinnerAdapter, this);
+
         StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
         StartFolder = (Button) findViewById(R.id.BtnStartFolder);
         StartBook = (Button) findViewById(R.id.BtnStartBook);
-
-        String[] faecher = getResources().getStringArray(R.array.FaecherGeschichte);
-
-        ChClassSpinner = (Spinner)findViewById(R.id.ChClassSpinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(Geschichte.this,
-                android.R.layout.simple_spinner_item, faecher);
-
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        ChClassSpinner.setAdapter(adapter);
-        ChClassSpinner.setOnItemSelectedListener(this);
 
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +45,8 @@ public class Geschichte extends Activity implements AdapterView.OnItemSelectedLi
                 startActivity(openIPMSG);
             }
         });
+
+
 
         StartFolder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,66 +65,68 @@ public class Geschichte extends Activity implements AdapterView.OnItemSelectedLi
         });
     }
 
-    public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
 
-        switch (position) {
+
+    @Override
+    public boolean onNavigationItemSelected(int itemPosition, long itemId) {
+        switch (itemPosition) {
             case 0:
 
                 break;
             case 1:
-                Intent startLatein = new Intent(Geschichte.this, Latein.class);
-                startActivity(startLatein);
-                break;
-            case 2:
-                Intent startFranzoesisch = new Intent(Geschichte.this, Franzoesisch.class);
-                startActivity(startFranzoesisch);
-                break;
-            case 3:
-                Intent startReligion = new Intent(Geschichte.this, Religion.class);
-                startActivity(startReligion);
-                break;
-            case 4:
                 Intent startDeutsch = new Intent(Geschichte.this, Deutsch.class);
                 startActivity(startDeutsch);
                 break;
-            case 5:
+            case 2:
                 Intent startMathe = new Intent(Geschichte.this, Mathe.class);
                 startActivity(startMathe);
                 break;
-            case 6:
+            case 3:
                 Intent startEnglish = new Intent(Geschichte.this, English.class);
                 startActivity(startEnglish);
                 break;
-            case 7:
+            case 4:
                 Intent startBiologie = new Intent(Geschichte.this, Biologie.class);
                 startActivity(startBiologie);
                 break;
-            case 8:
+            case 5:
                 Intent startGeographie = new Intent(Geschichte.this, Geographie.class);
                 startActivity(startGeographie);
                 break;
-            case 9:
+            case 6:
                 Intent startChemie = new Intent(Geschichte.this, Chemie.class);
                 startActivity(startChemie);
                 break;
-            case 10:
+            case 7:
                 Intent startPhysik = new Intent(Geschichte.this, Physik.class);
                 startActivity(startPhysik);
                 break;
+            case 8:
+                Intent startGeschichte = new Intent(Geschichte.this, Geschichte.class);
+                startActivity(startGeschichte);
+                break;
+            case 9:
+                Intent startLatein = new Intent(Geschichte.this, Latein.class);
+                startActivity(startLatein);
+                break;
+            case 10:
+                Intent startFranzoesisch = new Intent(Geschichte.this, Franzoesisch.class);
+                startActivity(startFranzoesisch);
+                break;
             case 11:
+                Intent startReligion = new Intent(Geschichte.this, Religion.class);
+                startActivity(startReligion);
+                break;
+            case 12:
                 Intent startStart = new Intent(Geschichte.this, start.class);
                 startActivity(startStart);
                 break;
 
 
-
         }
+        return false;
     }
 
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-
-    }
 
     @Override
     public void onBackPressed() {

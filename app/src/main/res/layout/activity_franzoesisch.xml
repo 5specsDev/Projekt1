@@ -9,12 +9,7 @@
     tools:context="de.fivespecsdev.schoolapp.Franzoesisch"
     android:background="@drawable/background_french_1"   >
 
-    <Spinner
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/ChClassSpinner"
-        android:layout_alignParentTop="true"
-        android:spinnerMode="dropdown" />
+
 
     <Button
         android:layout_width="wrap_content"
