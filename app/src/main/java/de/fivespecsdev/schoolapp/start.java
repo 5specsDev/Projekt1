@@ -1,9 +1,12 @@
 package de.fivespecsdev.schoolapp;
 
+import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -12,13 +15,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
+
 
 import java.lang.reflect.Array;
 
 
-public class start extends Activity implements AdapterView.OnItemSelectedListener {
+public class start extends Activity implements ActionBar.OnNavigationListener {
 
-    private Spinner ChClassSpinner;
     Button StartIPMSG;
     Button AdminAccess;
     Button StartFolder;
@@ -30,20 +34,18 @@ public class start extends Activity implements AdapterView.OnItemSelectedListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+
+        SpinnerAdapter mSpinnerAdapter = ArrayAdapter.createFromResource(this,
+                R.array.Faecher, android.R.layout.simple_spinner_dropdown_item);
+        actionBar.setListNavigationCallbacks(mSpinnerAdapter, this);
+
         StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
         AdminAccess = (Button) findViewById(R.id.BtnAdminAccess);
         StartFolder = (Button) findViewById(R.id.BtnStartFolder);
         StartBook = (Button) findViewById(R.id.BtnStartBook);
-
-        String[] faecher = getResources().getStringArray(R.array.Faecher);
-
-        ChClassSpinner = (Spinner)findViewById(R.id.ChClassSpinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(start.this,
-                android.R.layout.simple_spinner_item, faecher);
-
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        ChClassSpinner.setAdapter(adapter);
-        ChClassSpinner.setOnItemSelectedListener(this);
 
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,9 +80,11 @@ public class start extends Activity implements AdapterView.OnItemSelectedListene
         });
     }
 
-    public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
 
-        switch (position) {
+
+    @Override
+    public boolean onNavigationItemSelected(int itemPosition, long itemId) {
+        switch (itemPosition) {
             case 0:
 
                 break;
@@ -132,12 +136,10 @@ public class start extends Activity implements AdapterView.OnItemSelectedListene
 
 
         }
+        return false;
     }
 
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
 
-    }
 
     @Override
     public void onBackPressed() {
@@ -161,4 +163,6 @@ public class start extends Activity implements AdapterView.OnItemSelectedListene
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }
