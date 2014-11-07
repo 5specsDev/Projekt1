@@ -53,4 +53,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wörterbuch Latein"
+        android:id="@+id/BtnStartWBuchLatein"
+        android:layout_marginRight="65dp"
+        android:layout_alignTop="@+id/BtnStartBook"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp" />
+
 </RelativeLayout>

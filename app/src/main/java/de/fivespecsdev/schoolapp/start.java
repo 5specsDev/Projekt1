@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -27,7 +28,7 @@ public class start extends Activity implements ActionBar.OnNavigationListener {
     Button AdminAccess;
     Button StartFolder;
     Button StartBook;
-
+    private WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,8 +79,8 @@ public class start extends Activity implements ActionBar.OnNavigationListener {
                 startActivity(openBook);
             }
         });
-    }
 
+    }
 
 
     @Override
