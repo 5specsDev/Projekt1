@@ -28,7 +28,6 @@ public class start extends Activity implements ActionBar.OnNavigationListener {
     Button AdminAccess;
     Button StartFolder;
     Button StartBook;
-    private WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
