@@ -118,6 +118,14 @@ public class Chemie extends Activity implements ActionBar.OnNavigationListener {
                 startActivity(startReligion);
                 break;
             case 12:
+                Intent startMusik = new Intent(Chemie.this, Musik.class);
+                startActivity(startMusik);
+                break;
+            case 13:
+                Intent startKunst = new Intent(Chemie.this, Kunst.class);
+                startActivity(startKunst);
+                break;
+            case 14:
                 Intent startStart = new Intent(Chemie.this, start.class);
                 startActivity(startStart);
                 break;

@@ -118,10 +118,17 @@ public class Geschichte extends Activity implements ActionBar.OnNavigationListen
                 startActivity(startReligion);
                 break;
             case 12:
+                Intent startMusik = new Intent(Geschichte.this, Musik.class);
+                startActivity(startMusik);
+                break;
+            case 13:
+                Intent startKunst = new Intent(Geschichte.this, Kunst.class);
+                startActivity(startKunst);
+                break;
+            case 14:
                 Intent startStart = new Intent(Geschichte.this, start.class);
                 startActivity(startStart);
                 break;
-
 
         }
         return false;

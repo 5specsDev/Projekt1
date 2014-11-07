@@ -118,6 +118,14 @@ public class English extends Activity implements ActionBar.OnNavigationListener 
                 startActivity(startReligion);
                 break;
             case 12:
+                Intent startMusik = new Intent(English.this, Musik.class);
+                startActivity(startMusik);
+                break;
+            case 13:
+                Intent startKunst = new Intent(English.this, Kunst.class);
+                startActivity(startKunst);
+                break;
+            case 14:
                 Intent startStart = new Intent(English.this, start.class);
                 startActivity(startStart);
                 break;

@@ -118,6 +118,14 @@ public class Franzoesisch extends Activity implements ActionBar.OnNavigationList
                 startActivity(startReligion);
                 break;
             case 12:
+                Intent startMusik = new Intent(Franzoesisch.this, Musik.class);
+                startActivity(startMusik);
+                break;
+            case 13:
+                Intent startKunst = new Intent(Franzoesisch.this, Kunst.class);
+                startActivity(startKunst);
+                break;
+            case 14:
                 Intent startStart = new Intent(Franzoesisch.this, start.class);
                 startActivity(startStart);
                 break;

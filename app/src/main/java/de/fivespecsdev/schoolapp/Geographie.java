@@ -118,6 +118,14 @@ public class Geographie extends Activity implements ActionBar.OnNavigationListen
                 startActivity(startReligion);
                 break;
             case 12:
+                Intent startMusik = new Intent(Geographie.this, Musik.class);
+                startActivity(startMusik);
+                break;
+            case 13:
+                Intent startKunst = new Intent(Geographie.this, Kunst.class);
+                startActivity(startKunst);
+                break;
+            case 14:
                 Intent startStart = new Intent(Geographie.this, start.class);
                 startActivity(startStart);
                 break;

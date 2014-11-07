@@ -5,7 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_start">start</string>
     <string name="title_activity_deutsch">Deutsch</string>
-    <string name="Versionsnummer">Version 0.5</string>
+    <string name="Versionsnummer">Version 0.6</string>
 
     <string-array name="Faecher">
         <item>Start</item>
@@ -20,9 +20,10 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
         <item>Start</item>
     </string-array>
-
     <string-array name="FaecherDeutsch">
         <item>Deutsch</item>
         <item>Deutsch</item>
@@ -36,9 +37,10 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
         <item>Start</item>
     </string-array>
-
     <string-array name="FaecherMathe">
         <item>Mathe</item>
         <item>Deutsch</item>
@@ -52,9 +54,10 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
         <item>Start</item>
     </string-array>
-
     <string-array name="FaecherEnglish">
         <item>English</item>
         <item>Deutsch</item>
@@ -68,9 +71,10 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
         <item>Start</item>
     </string-array>
-
     <string-array name="FaecherBiologie">
         <item>Biologie</item>
         <item>Deutsch</item>
@@ -84,9 +88,10 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
         <item>Start</item>
     </string-array>
-
     <string-array name="FaecherGeographie">
         <item>Geographie</item>
         <item>Deutsch</item>
@@ -100,9 +105,10 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
         <item>Start</item>
     </string-array>
-
     <string-array name="FaecherChemie">
         <item>Chemie</item>
         <item>Deutsch</item>
@@ -116,9 +122,10 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
         <item>Start</item>
     </string-array>
-
     <string-array name="FaecherPhysik">
         <item>Physik</item>
         <item>Deutsch</item>
@@ -132,9 +139,10 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
         <item>Start</item>
     </string-array>
-
     <string-array name="FaecherGeschichte">
         <item>Geschichte</item>
         <item>Deutsch</item>
@@ -148,9 +156,10 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
         <item>Start</item>
     </string-array>
-
     <string-array name="FaecherLatein">
         <item>Latein</item>
         <item>Deutsch</item>
@@ -164,9 +173,10 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
         <item>Start</item>
     </string-array>
-
     <string-array name="FaecherFranz">
         <item>Französisch</item>
         <item>Deutsch</item>
@@ -180,9 +190,10 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
         <item>Start</item>
     </string-array>
-
     <string-array name="FaecherReligion">
         <item>Religion</item>
         <item>Deutsch</item>
@@ -196,11 +207,44 @@
         <item>Latein</item>
         <item>Französisch</item>
         <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
         <item>Start</item>
     </string-array>
-
-
-
+    <string-array name="FaecherMusik">
+        <item>Musik</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
+        <item>Start</item>
+    </string-array>
+    <string-array name="FaecherKunst">
+        <item>Kunst</item>
+        <item>Deutsch</item>
+        <item>Mathe</item>
+        <item>English</item>
+        <item>Biologie</item>
+        <item>Geographie</item>
+        <item>Chemie</item>
+        <item>Physik</item>
+        <item>Geschichte</item>
+        <item>Latein</item>
+        <item>Französisch</item>
+        <item>Religion</item>
+        <item>Musik</item>
+        <item>Kunst</item>
+        <item>Start</item>
+    </string-array>
     <string name="title_activity_admin_password_check">AdminPasswordCheck</string>
     <string name="title_activity_admin_access">AdminAccess</string>
     <string name="title_activity_mathe">Mathe</string>
@@ -213,5 +257,7 @@
     <string name="title_activity_latein">Latein</string>
     <string name="title_activity_franzoesisch">Franzoesisch</string>
     <string name="title_activity_religion">Religion</string>
+    <string name="title_activity_musik">Musik</string>
+    <string name="title_activity_kunst">Kunst</string>
 
 </resources>

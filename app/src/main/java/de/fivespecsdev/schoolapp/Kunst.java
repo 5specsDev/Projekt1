@@ -7,16 +7,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
 
-public class Latein extends Activity implements ActionBar.OnNavigationListener {
-    
-    
+public class Kunst extends Activity implements ActionBar.OnNavigationListener {
+
+
     Button StartIPMSG;
     Button StartFolder;
     Button StartBook;
@@ -24,14 +22,14 @@ public class Latein extends Activity implements ActionBar.OnNavigationListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_latein);
+        setContentView(R.layout.activity_kunst);
 
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayShowTitleEnabled(false);
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
 
         SpinnerAdapter mSpinnerAdapter = ArrayAdapter.createFromResource(this,
-                R.array.FaecherLatein, android.R.layout.simple_spinner_dropdown_item);
+                R.array.FaecherKunst, android.R.layout.simple_spinner_dropdown_item);
         actionBar.setListNavigationCallbacks(mSpinnerAdapter, this);
 
         StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
@@ -74,59 +72,59 @@ public class Latein extends Activity implements ActionBar.OnNavigationListener {
 
                 break;
             case 1:
-                Intent startDeutsch = new Intent(Latein.this, Deutsch.class);
+                Intent startDeutsch = new Intent(Kunst.this, Deutsch.class);
                 startActivity(startDeutsch);
                 break;
             case 2:
-                Intent startMathe = new Intent(Latein.this, Mathe.class);
+                Intent startMathe = new Intent(Kunst.this, Mathe.class);
                 startActivity(startMathe);
                 break;
             case 3:
-                Intent startEnglish = new Intent(Latein.this, English.class);
+                Intent startEnglish = new Intent(Kunst.this, English.class);
                 startActivity(startEnglish);
                 break;
             case 4:
-                Intent startBiologie = new Intent(Latein.this, Biologie.class);
+                Intent startBiologie = new Intent(Kunst.this, Biologie.class);
                 startActivity(startBiologie);
                 break;
             case 5:
-                Intent startGeographie = new Intent(Latein.this, Geographie.class);
+                Intent startGeographie = new Intent(Kunst.this, Geographie.class);
                 startActivity(startGeographie);
                 break;
             case 6:
-                Intent startChemie = new Intent(Latein.this, Chemie.class);
+                Intent startChemie = new Intent(Kunst.this, Chemie.class);
                 startActivity(startChemie);
                 break;
             case 7:
-                Intent startPhysik = new Intent(Latein.this, Physik.class);
+                Intent startPhysik = new Intent(Kunst.this, Physik.class);
                 startActivity(startPhysik);
                 break;
             case 8:
-                Intent startGeschichte = new Intent(Latein.this, Geschichte.class);
+                Intent startGeschichte = new Intent(Kunst.this, Geschichte.class);
                 startActivity(startGeschichte);
                 break;
             case 9:
-                Intent startLatein = new Intent(Latein.this, Latein.class);
+                Intent startLatein = new Intent(Kunst.this, Latein.class);
                 startActivity(startLatein);
                 break;
             case 10:
-                Intent startFranzoesisch = new Intent(Latein.this, Franzoesisch.class);
+                Intent startFranzoesisch = new Intent(Kunst.this, Franzoesisch.class);
                 startActivity(startFranzoesisch);
                 break;
             case 11:
-                Intent startReligion = new Intent(Latein.this, Religion.class);
+                Intent startReligion = new Intent(Kunst.this, Religion.class);
                 startActivity(startReligion);
                 break;
             case 12:
-                Intent startMusik = new Intent(Latein.this, Musik.class);
+                Intent startMusik = new Intent(Kunst.this, Musik.class);
                 startActivity(startMusik);
                 break;
             case 13:
-                Intent startKunst = new Intent(Latein.this, Kunst.class);
+                Intent startKunst = new Intent(Kunst.this, Kunst.class);
                 startActivity(startKunst);
                 break;
             case 14:
-                Intent startStart = new Intent(Latein.this, start.class);
+                Intent startStart = new Intent(Kunst.this, start.class);
                 startActivity(startStart);
                 break;
 
@@ -138,13 +136,6 @@ public class Latein extends Activity implements ActionBar.OnNavigationListener {
 
     @Override
     public void onBackPressed() {
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.latein, menu);
-        return true;
     }
 
     @Override

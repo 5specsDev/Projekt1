@@ -118,6 +118,14 @@ public class Biologie extends Activity implements ActionBar.OnNavigationListener
                 startActivity(startReligion);
                 break;
             case 12:
+                Intent startMusik = new Intent(Biologie.this, Musik.class);
+                startActivity(startMusik);
+                break;
+            case 13:
+                Intent startKunst = new Intent(Biologie.this, Kunst.class);
+                startActivity(startKunst);
+                break;
+            case 14:
                 Intent startStart = new Intent(Biologie.this, start.class);
                 startActivity(startStart);
                 break;

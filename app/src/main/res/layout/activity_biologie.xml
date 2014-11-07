@@ -14,7 +14,6 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
         android:id="@+id/BtnStartCal"
         android:layout_below="@+id/ChClassSpinner"
         android:layout_alignParentLeft="true"
@@ -53,6 +52,28 @@
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tafelwerk"
+        android:id="@+id/BtnStartTafel"
+        android:layout_alignBottom="@+id/BtnStartBook"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="42dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ICell"
+        android:id="@+id/StartBtnICell"
+        android:layout_below="@+id/BtnStartBook"
+        android:layout_alignRight="@+id/BtnStartTafel"
+        android:layout_alignEnd="@+id/BtnStartTafel"
+        android:layout_alignLeft="@+id/BtnStartTafel"
+        android:layout_alignStart="@+id/BtnStartTafel" />
 
 
 </RelativeLayout>
