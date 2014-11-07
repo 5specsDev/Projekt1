@@ -148,6 +148,7 @@ public class Deutsch extends Activity implements ActionBar.OnNavigationListener 
         return true;
     }
 
+    /*
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -159,4 +160,5 @@ public class Deutsch extends Activity implements ActionBar.OnNavigationListener 
         }
         return super.onOptionsItemSelected(item);
     }
+    */
 }

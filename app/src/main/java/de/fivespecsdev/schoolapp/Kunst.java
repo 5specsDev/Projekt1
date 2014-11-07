@@ -138,6 +138,7 @@ public class Kunst extends Activity implements ActionBar.OnNavigationListener {
     public void onBackPressed() {
     }
 
+    /*
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -152,4 +153,5 @@ public class Kunst extends Activity implements ActionBar.OnNavigationListener {
 
         return super.onOptionsItemSelected(item);
     }
+    */
 }

@@ -147,6 +147,7 @@ public class Franzoesisch extends Activity implements ActionBar.OnNavigationList
         return true;
     }
 
+    /*
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -161,4 +162,5 @@ public class Franzoesisch extends Activity implements ActionBar.OnNavigationList
 
         return super.onOptionsItemSelected(item);
     }
+    */
 }
