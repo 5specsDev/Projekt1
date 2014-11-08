@@ -49,18 +49,22 @@
         android:layout_height="wrap_content"
         android:text="Admin Zugang"
         android:id="@+id/BtnAdminAccess"
+        android:layout_toEndOf="@+id/BtnStartBook"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_toRightOf="@+id/BtnStartBook"
+        android:layout_marginLeft="452dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IPMSG"
+        android:text=""
         android:id="@+id/BtnStartIPMSG"
-        android:layout_centerVertical="true"
+        android:background="@drawable/placeholder1"
+        android:layout_toStartOf="@+id/BtnStartBook"
+        android:layout_below="@+id/BtnStartCal"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="95dp" />
 
     <TextView
         android:layout_width="wrap_content"

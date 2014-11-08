@@ -48,21 +48,24 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IPMSG"
+        android:text=""
         android:id="@+id/BtnStartIPMSG"
-        android:layout_centerVertical="true"
+        android:background="@drawable/placeholder1"
+        android:layout_toStartOf="@+id/BtnStartBook"
+        android:layout_below="@+id/BtnStartCal"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="66dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wörterbuch Latein"
+        android:text="Wörterbuch"
         android:id="@+id/BtnStartWBuchLatein"
-        android:layout_marginRight="65dp"
-        android:layout_alignTop="@+id/BtnStartBook"
+        android:layout_marginRight="142dp"
+        android:background="@drawable/custom2"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="55dp" />
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

@@ -48,31 +48,38 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IPMSG"
+        android:text=""
         android:id="@+id/BtnStartIPMSG"
-        android:layout_centerVertical="true"
+        android:background="@drawable/placeholder1"
+        android:layout_toStartOf="@+id/BtnStartBook"
+        android:layout_below="@+id/BtnStartCal"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tafelwerk"
         android:id="@+id/BtnStartTafel"
-        android:layout_marginRight="53dp"
-        android:layout_marginBottom="50dp"
-        android:layout_alignBottom="@+id/BtnStartBook"
+        android:background="@drawable/custom2"
+        android:layout_toStartOf="@+id/BtnStartFolder"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Taschenrechner"
+        android:text=""
         android:id="@+id/BtnStartTR"
-        android:layout_below="@+id/BtnStartBook"
+        android:background="@drawable/calculator1"
+        android:layout_toStartOf="@+id/BtnStartTafel"
+        android:layout_alignTop="@+id/BtnStartBook"
         android:layout_alignLeft="@+id/BtnStartTafel"
-        android:layout_alignStart="@+id/BtnStartTafel" />
+        android:layout_alignStart="@+id/BtnStartTafel"
+        android:layout_alignRight="@+id/BtnStartTafel"
+        android:layout_alignEnd="@+id/BtnStartTafel" />
 
 
 </RelativeLayout>

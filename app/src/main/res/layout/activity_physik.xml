@@ -49,18 +49,22 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IPMSG"
+        android:text=""
         android:id="@+id/BtnStartIPMSG"
-        android:layout_centerVertical="true"
+        android:background="@drawable/placeholder1"
+        android:layout_toStartOf="@+id/BtnStartBook"
+        android:layout_below="@+id/BtnStartCal"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Taschenrechner"
+        android:text=""
         android:id="@+id/BtnStartTR"
-        android:layout_marginTop="53dp"
+        android:background="@drawable/calculator1"
+        android:layout_marginRight="45dp"
         android:layout_alignTop="@+id/BtnStartBook"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -70,7 +74,8 @@
         android:layout_height="wrap_content"
         android:text="Tafelwerk"
         android:id="@+id/BtnStartTafel"
-        android:layout_below="@+id/BtnStartBook"
+        android:background="@drawable/custom2"
+        android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/BtnStartTR"
         android:layout_alignStart="@+id/BtnStartTR" />
 
