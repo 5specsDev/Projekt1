@@ -22,7 +22,7 @@ public class Musik extends Activity implements ActionBar.OnNavigationListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kunst);
+        setContentView(R.layout.activity_musik);
 
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayShowTitleEnabled(false);
