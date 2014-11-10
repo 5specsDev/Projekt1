@@ -5,12 +5,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
 
@@ -20,6 +17,7 @@ public class Chemie extends Activity implements ActionBar.OnNavigationListener {
     Button StartIPMSG;
     Button StartFolder;
     Button StartBook;
+    Button StartTafel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +35,7 @@ public class Chemie extends Activity implements ActionBar.OnNavigationListener {
         StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
         StartFolder = (Button) findViewById(R.id.BtnStartFolder);
         StartBook = (Button) findViewById(R.id.BtnStartBook);
+        StartTafel = (Button) findViewById(R.id.BtnStartTafel);
 
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +60,14 @@ public class Chemie extends Activity implements ActionBar.OnNavigationListener {
             public void onClick(View v) {
                 Intent openBook = getPackageManager().getLaunchIntentForPackage("com.adobe.reader");
                 startActivity(openBook);
+            }
+        });
+
+        StartTafel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openTafel = getPackageManager().getLeanbackLaunchIntentForPackage("com.cornelsen.formelsammlung");
+                startActivity(openTafel);
             }
         });
     }

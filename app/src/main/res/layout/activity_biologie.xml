@@ -25,7 +25,6 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
         android:id="@+id/BtnStartFolder"
         android:layout_toEndOf="@+id/BtnStartCal"
         android:background="@drawable/folder1"
@@ -59,7 +58,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tefelwerk"
+        android:text="Tafelwerk"
         android:id="@+id/BtnStartTafel"
         android:background="@drawable/custom2"
         android:layout_alignTop="@+id/BtnStartBook"
