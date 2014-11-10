@@ -69,7 +69,7 @@ public class Physik extends Activity implements ActionBar.OnNavigationListener {
         StartTafel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent openTafel = getPackageManager().getLeanbackLaunchIntentForPackage("com.cornelsen.formelsammlung");
+                Intent openTafel = getPackageManager().getLaunchIntentForPackage("com.cornelsen.formelsammlung");
                 startActivity(openTafel);
             }
         });
