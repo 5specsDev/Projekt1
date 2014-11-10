@@ -60,8 +60,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Google Maps"
-        android:id="@+id/BtnStartMaps"
+        android:text="Google Earth"
+        android:id="@+id/BtnStartEarth"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="55dp"

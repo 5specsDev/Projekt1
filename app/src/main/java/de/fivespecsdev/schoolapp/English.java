@@ -5,12 +5,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
 
@@ -20,6 +17,7 @@ public class English extends Activity implements ActionBar.OnNavigationListener 
     Button StartIPMSG;
     Button StartFolder;
     Button StartBook;
+    Button StartWörterbuchEnglish;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +35,7 @@ public class English extends Activity implements ActionBar.OnNavigationListener 
         StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
         StartFolder = (Button) findViewById(R.id.BtnStartFolder);
         StartBook = (Button) findViewById(R.id.BtnStartBook);
+        StartWörterbuchEnglish = (Button) findViewById(R.id.BtnStartWBuchEng);
 
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +60,14 @@ public class English extends Activity implements ActionBar.OnNavigationListener 
             public void onClick(View v) {
                 Intent openBook = getPackageManager().getLaunchIntentForPackage("com.adobe.reader");
                 startActivity(openBook);
+            }
+        });
+
+        StartWörterbuchEnglish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openEngWBuch = getPackageManager().getLaunchIntentForPackage("org.leo.android.dict");
+                startActivity(openEngWBuch);
             }
         });
     }
