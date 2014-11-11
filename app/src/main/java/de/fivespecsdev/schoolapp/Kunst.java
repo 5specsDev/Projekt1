@@ -18,6 +18,7 @@ public class Kunst extends Activity implements ActionBar.OnNavigationListener {
     Button StartIPMSG;
     Button StartFolder;
     Button StartBook;
+    Button StartHomework;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class Kunst extends Activity implements ActionBar.OnNavigationListener {
         StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
         StartFolder = (Button) findViewById(R.id.BtnStartFolder);
         StartBook = (Button) findViewById(R.id.BtnStartBook);
+        StartHomework = (Button) findViewById(R.id.BtnStartCal);
 
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,8 +59,16 @@ public class Kunst extends Activity implements ActionBar.OnNavigationListener {
         StartBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent openBook = getPackageManager().getLaunchIntentForPackage("com.adobe.reader");
+                Intent openBook = getPackageManager().getLaunchIntentForPackage("air.eu.ydp.bookshelf.gap");
                 startActivity(openBook);
+            }
+        });
+
+        StartHomework.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openHomework = getPackageManager().getLaunchIntentForPackage("com.myhomeowork");
+                startActivity(openHomework);
             }
         });
     }

@@ -5,9 +5,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
 
@@ -17,6 +20,7 @@ public class Deutsch extends Activity implements ActionBar.OnNavigationListener 
     Button StartIPMSG;
     Button StartFolder;
     Button StartBook;
+    Button StartHomework;
     Button StartDuden;
 
     @Override
@@ -35,6 +39,7 @@ public class Deutsch extends Activity implements ActionBar.OnNavigationListener 
         StartIPMSG = (Button) findViewById(R.id.BtnStartIPMSG);
         StartFolder = (Button) findViewById(R.id.BtnStartFolder);
         StartBook = (Button) findViewById(R.id.BtnStartBook);
+        StartHomework = (Button) findViewById(R.id.BtnStartCal);
         StartDuden = (Button) findViewById(R.id.BtnStartDuden);
 
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
@@ -58,8 +63,16 @@ public class Deutsch extends Activity implements ActionBar.OnNavigationListener 
         StartBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent openBook = getPackageManager().getLaunchIntentForPackage("com.adobe.reader");
+                Intent openBook = getPackageManager().getLaunchIntentForPackage("air.eu.ydp.bookshelf.gap");
                 startActivity(openBook);
+            }
+        });
+
+        StartHomework.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openHomework = getPackageManager().getLaunchIntentForPackage("com.myhomeowork");
+                startActivity(openHomework);
             }
         });
 
