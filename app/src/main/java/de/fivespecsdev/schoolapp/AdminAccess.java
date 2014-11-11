@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -14,6 +13,7 @@ public class AdminAccess extends Activity {
     Button SystemSettings;
     Button Browser;
     Button PlayStore;
+    Button Logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class AdminAccess extends Activity {
         SystemSettings = (Button) findViewById(R.id.BtnStartSystemSettings);
         Browser = (Button) findViewById(R.id.BtnStartBrowser);
         PlayStore = (Button) findViewById(R.id.BtnStartPlayStore);
+        Logout = (Button) findViewById(R.id.BtnAdminOut);
 
         SystemSettings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,8 +48,19 @@ public class AdminAccess extends Activity {
                 startActivity(openPlayStore);
             }
         });
+
+        Logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startStart = new Intent(AdminAccess.this, start.class);
+                startActivity(startStart);
+            }
+        });
     }
 
+    @Override
+    public void onBackPressed() {
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
