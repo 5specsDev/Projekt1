@@ -102,11 +102,13 @@
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.Musik"
-            android:label="@string/title_activity_musik" >
+            android:label="@string/title_activity_musik"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name="de.fivespecsdev.schoolapp.Kunst"
-            android:label="@string/title_activity_kunst" >
+            android:label="@string/title_activity_kunst"
+            android:screenOrientation="landscape">
         </activity>
     </application>
 
