@@ -64,22 +64,9 @@
         android:id="@+id/BtnStartTafel"
         android:background="@drawable/custom2"
         android:layout_toStartOf="@+id/BtnStartFolder"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/BtnStartTR"
-        android:background="@drawable/calculator1"
-        android:layout_toStartOf="@+id/BtnStartTafel"
-        android:layout_alignTop="@+id/BtnStartBook"
-        android:layout_alignLeft="@+id/BtnStartTafel"
-        android:layout_alignStart="@+id/BtnStartTafel"
-        android:layout_alignRight="@+id/BtnStartTafel"
-        android:layout_alignEnd="@+id/BtnStartTafel" />
 
 
 </RelativeLayout>

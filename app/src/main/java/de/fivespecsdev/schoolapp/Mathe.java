@@ -23,6 +23,7 @@ public class Mathe extends Activity implements ActionBar.OnNavigationListener {
     Button StartHomework;
     Button StartTafel;
     Button StartTaschenrechner;
+    Button StartGeoGebra;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,7 @@ public class Mathe extends Activity implements ActionBar.OnNavigationListener {
         StartHomework = (Button) findViewById(R.id.BtnStartCal);
         StartTafel = (Button) findViewById(R.id.BtnStartTafel);
         StartTaschenrechner = (Button) findViewById(R.id.BtnStartTR);
+        StartGeoGebra = (Button) findViewById(R.id.BtnStartGeoGebra);
 
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,8 +91,16 @@ public class Mathe extends Activity implements ActionBar.OnNavigationListener {
         StartTaschenrechner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent openTaschenrechner = getPackageManager().getLaunchIntentForPackage("com.mathsapp");
+                Intent openTaschenrechner = getPackageManager().getLaunchIntentForPackage("com.mathsapp.graphing");
                 startActivity(openTaschenrechner);
+            }
+        });
+
+        StartGeoGebra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openGeogebra = getPackageManager().getLaunchIntentForPackage("org.geogebra");
+                startActivity(openGeogebra);
             }
         });
     }

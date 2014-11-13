@@ -75,4 +75,15 @@
         android:layout_alignLeft="@+id/BtnStartTR"
         android:layout_alignStart="@+id/BtnStartTR" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GeoGebra"
+        android:id="@+id/BtnStartGeoGebra"
+        android:background="@drawable/custom1"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/BtnStartTafel"
+        android:layout_alignLeft="@+id/BtnStartTafel"
+        android:layout_alignStart="@+id/BtnStartTafel" />
+
 </RelativeLayout>

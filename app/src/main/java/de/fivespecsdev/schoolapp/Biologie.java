@@ -22,9 +22,10 @@ public class Biologie extends Activity implements ActionBar.OnNavigationListener
     Button StartBook;
     Button StartHomework;
     Button StartTafel;
+    Button StartICell;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_biologie);
 
@@ -41,6 +42,7 @@ public class Biologie extends Activity implements ActionBar.OnNavigationListener
         StartBook = (Button) findViewById(R.id.BtnStartBook);
         StartHomework = (Button) findViewById(R.id.BtnStartCal);
         StartTafel = (Button) findViewById(R.id.BtnStartTafel);
+        StartICell = (Button) findViewById(R.id.BtnStartICell);
 
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,6 +83,14 @@ public class Biologie extends Activity implements ActionBar.OnNavigationListener
             public void onClick(View v) {
                 Intent openTafel = getPackageManager().getLaunchIntentForPackage("com.cornelsen.formelsammlung");
                 startActivity(openTafel);
+            }
+        });
+
+        StartICell.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openICell = getPackageManager().getLaunchIntentForPackage("org.hudsonalpha.icell");
+                startActivity(openICell);
             }
         });
     }

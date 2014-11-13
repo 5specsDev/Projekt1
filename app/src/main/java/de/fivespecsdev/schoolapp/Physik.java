@@ -89,7 +89,7 @@ public class Physik extends Activity implements ActionBar.OnNavigationListener {
         StartTaschenrechner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent openTaschenrechner = getPackageManager().getLaunchIntentForPackage("com.mathsapp");
+                Intent openTaschenrechner = getPackageManager().getLaunchIntentForPackage("com.mathsapp.graphing");
                 startActivity(openTaschenrechner);
             }
         });
