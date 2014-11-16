@@ -6,6 +6,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
 import android.widget.Toast;
+
+import java.sql.Array;
+import java.util.Arrays;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -14,10 +17,9 @@ public class AppLockerService extends Service {
     public AppLockerService() {
     }
 
-    String blacklistedApp1 = "com.android.settings";
-    String blacklistedApp2 = "com.android.browser";
-    TimerTask mTimerTask;
+    String[] blacklistedApps = {"com.android.settings", "com.android.browser"};
 
+    TimerTask mTimerTask;
 
 
     @Override
@@ -33,7 +35,7 @@ public class AppLockerService extends Service {
                 final ActivityManager.RunningTaskInfo top = am.getRunningTasks(1).get(0);
                 final String packageName = top.topActivity.getPackageName();
 
-                if ( packageName.equals(blacklistedApp1) || packageName.equals(blacklistedApp2) ) {
+                if (Arrays.asList(blacklistedApps).contains(packageName)) {
 
                         Intent launchIntent = new Intent(getBaseContext(), ForbiddenApp.class);
                         launchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
