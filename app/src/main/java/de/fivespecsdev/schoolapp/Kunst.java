@@ -4,8 +4,6 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -19,6 +17,7 @@ public class Kunst extends Activity implements ActionBar.OnNavigationListener {
     Button StartFolder;
     Button StartBook;
     Button StartHomework;
+    Button StartPSTouch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +36,7 @@ public class Kunst extends Activity implements ActionBar.OnNavigationListener {
         StartFolder = (Button) findViewById(R.id.BtnStartFolder);
         StartBook = (Button) findViewById(R.id.BtnStartBook);
         StartHomework = (Button) findViewById(R.id.BtnStartCal);
+        StartPSTouch = (Button) findViewById(R.id.BtnStartPhotoshop);
 
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +69,14 @@ public class Kunst extends Activity implements ActionBar.OnNavigationListener {
             public void onClick(View v) {
                 Intent openHomework = getPackageManager().getLaunchIntentForPackage("com.myhomeowork");
                 startActivity(openHomework);
+            }
+        });
+
+        StartPSTouch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openPhotoshop = getPackageManager().getLaunchIntentForPackage("air.com.adobe.pstouch.oem1");
+                startActivity(openPhotoshop);
             }
         });
     }
