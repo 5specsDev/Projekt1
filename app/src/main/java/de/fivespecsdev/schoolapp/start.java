@@ -24,6 +24,8 @@ public class start extends Activity implements ActionBar.OnNavigationListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
+        startService(new Intent(start.this, AppLockerService.class));
+
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayShowTitleEnabled(false);
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);

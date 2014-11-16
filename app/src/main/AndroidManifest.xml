@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.fivespecsdev.schoolapp" >
+    package="de.fivespecsdev.schoolapp">
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher2"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
-            android:name="de.fivespecsdev.schoolapp.start"
+            android:name=".start"
             android:clearTaskOnLaunch="true"
             android:label="@string/app_name"
             android:launchMode="singleTask"
@@ -33,81 +34,93 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.Deutsch"
+            android:name=".Deutsch"
             android:label="@string/title_activity_deutsch"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.AdminPasswordCheck"
+            android:name=".AdminPasswordCheck"
             android:label="@string/title_activity_admin_password_check"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.AdminAccess"
+            android:name=".AdminAccess"
             android:label="@string/title_activity_admin_access"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.Mathe"
+            android:name=".Mathe"
             android:label="@string/title_activity_mathe"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.English"
+            android:name=".English"
             android:label="@string/title_activity_english"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.Biologie"
+            android:name=".Biologie"
             android:label="@string/title_activity_biologie"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.Chemie"
+            android:name=".Chemie"
             android:label="@string/title_activity_chemie"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.Geographie"
+            android:name=".Geographie"
             android:label="@string/title_activity_geographie"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.Physik"
+            android:name=".Physik"
             android:label="@string/title_activity_physik"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.Geschichte"
+            android:name=".Geschichte"
             android:label="@string/title_activity_geschichte"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.Latein"
+            android:name=".Latein"
             android:label="@string/title_activity_latein"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.Franzoesisch"
+            android:name=".Franzoesisch"
             android:label="@string/title_activity_franzoesisch"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.Religion"
+            android:name=".Religion"
             android:label="@string/title_activity_religion"
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.Musik"
+            android:name=".Musik"
             android:label="@string/title_activity_musik"
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="de.fivespecsdev.schoolapp.Kunst"
+            android:name=".Kunst"
             android:label="@string/title_activity_kunst"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <service
+            android:name=".AppLockerService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".ForbiddenApp"
+            android:label="@string/title_activity_forbidden_app"
             android:screenOrientation="landscape">
         </activity>
     </application>

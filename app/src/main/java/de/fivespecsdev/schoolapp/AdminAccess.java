@@ -14,6 +14,8 @@ public class AdminAccess extends Activity {
     Button Browser;
     Button PlayStore;
     Button Logout;
+    Button LockApps;
+    Button UnlockApps;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,8 @@ public class AdminAccess extends Activity {
         Browser = (Button) findViewById(R.id.BtnStartBrowser);
         PlayStore = (Button) findViewById(R.id.BtnStartPlayStore);
         Logout = (Button) findViewById(R.id.BtnAdminOut);
+        LockApps = (Button) findViewById(R.id.BtnLockApps);
+        UnlockApps = (Button) findViewById(R.id.BtnUnlockApps);
 
         SystemSettings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +58,20 @@ public class AdminAccess extends Activity {
             public void onClick(View v) {
                 Intent startStart = new Intent(AdminAccess.this, start.class);
                 startActivity(startStart);
+            }
+        });
+
+        LockApps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startService(new Intent(AdminAccess.this, AppLockerService.class));
+            }
+        });
+
+        UnlockApps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                stopService(new Intent(AdminAccess.this, AppLockerService.class));
             }
         });
     }

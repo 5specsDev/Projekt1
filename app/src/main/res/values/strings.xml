@@ -5,7 +5,9 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_start">start</string>
     <string name="title_activity_deutsch">Deutsch</string>
-    <string name="Versionsnummer">Version 0.7.1</string>
+    <string name="Versionsnummer">Version 0.8</string>
+    <string name="AppLocked">Diese App ist gesperrt!</string>
+
 
     <string-array name="Faecher">
         <item>Start</item>
@@ -245,6 +247,7 @@
         <item>Kunst</item>
         <item>Start</item>
     </string-array>
+
     <string name="title_activity_admin_password_check">AdminPasswordCheck</string>
     <string name="title_activity_admin_access">AdminAccess</string>
     <string name="title_activity_mathe">Mathe</string>
@@ -259,5 +262,7 @@
     <string name="title_activity_religion">Religion</string>
     <string name="title_activity_musik">Musik</string>
     <string name="title_activity_kunst">Kunst</string>
+    <string name="title_activity_forbidden_app">ForbiddenApp</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
