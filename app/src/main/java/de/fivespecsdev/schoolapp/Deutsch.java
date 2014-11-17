@@ -21,7 +21,6 @@ public class Deutsch extends Activity implements ActionBar.OnNavigationListener 
     Button StartFolder;
     Button StartBook;
     Button StartHomework;
-    Button StartDuden;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +39,6 @@ public class Deutsch extends Activity implements ActionBar.OnNavigationListener 
         StartFolder = (Button) findViewById(R.id.BtnStartFolder);
         StartBook = (Button) findViewById(R.id.BtnStartBook);
         StartHomework = (Button) findViewById(R.id.BtnStartCal);
-        StartDuden = (Button) findViewById(R.id.BtnStartDuden);
 
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,13 +74,7 @@ public class Deutsch extends Activity implements ActionBar.OnNavigationListener 
             }
         });
 
-        StartDuden.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent openDuden = getPackageManager().getLaunchIntentForPackage("livio.pack.lang.de_DE");
-                startActivity(openDuden);
-            }
-        });
+
     }
 
 
