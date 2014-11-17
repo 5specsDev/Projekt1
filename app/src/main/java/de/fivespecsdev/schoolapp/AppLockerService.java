@@ -6,8 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
 import android.widget.Toast;
-
-import java.sql.Array;
 import java.util.Arrays;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -17,7 +15,10 @@ public class AppLockerService extends Service {
     public AppLockerService() {
     }
 
-    String[] blacklistedApps = {"com.android.settings", "com.android.browser"};
+    String[] blacklistedApps = {"com.android.settings", "com.android.browser", "com.vlingo.midas", "com.google.android.googlequicksearchbox",
+                                "com.sec.chaton", "com.sec.android.app.samsungapps", "com.android.vending", "com.google.android.youtube",
+                                "com.android.chrome","com.android.email", "com.sec.android.apps.gamehub", "com.google.android.gm",
+                                "com.google.android.play.games", "com.sec.android.apps.launcher"};
 
     TimerTask mTimerTask;
 
