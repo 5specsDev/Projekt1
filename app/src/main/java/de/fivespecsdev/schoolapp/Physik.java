@@ -3,6 +3,7 @@ package de.fivespecsdev.schoolapp;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -24,10 +25,17 @@ public class Physik extends Activity implements ActionBar.OnNavigationListener {
     Button StartTafel;
     Button StartTaschenrechner;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_physik);
+
+        SharedPreferences myPreferences = this.getSharedPreferences("Preferences", MODE_PRIVATE);
+        final SharedPreferences.Editor editor = myPreferences.edit();
+        editor.putString("LastClass", "Physik");
+        editor.commit();
 
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayShowTitleEnabled(false);
@@ -156,6 +164,10 @@ public class Physik extends Activity implements ActionBar.OnNavigationListener {
                 startActivity(startKunst);
                 break;
             case 14:
+                SharedPreferences myPreferences = this.getSharedPreferences("Preferences", MODE_PRIVATE);
+                final SharedPreferences.Editor editor = myPreferences.edit();
+                editor.putString("LastClass", "Start");
+                editor.commit();
                 Intent startStart = new Intent(Physik.this, start.class);
                 startActivity(startStart);
                 break;
@@ -165,6 +177,14 @@ public class Physik extends Activity implements ActionBar.OnNavigationListener {
         return false;
     }
 
+    @Override
+    public void onResume() {
+        SharedPreferences myPreferences = this.getSharedPreferences("Preferences", MODE_PRIVATE);
+        final SharedPreferences.Editor editor = myPreferences.edit();
+        editor.putString("LastClass", "Physik");
+        editor.commit();
+        super.onResume();
+    }
 
     @Override
     public void onBackPressed() {

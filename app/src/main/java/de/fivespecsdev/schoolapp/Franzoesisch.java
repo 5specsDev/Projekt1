@@ -3,6 +3,7 @@ package de.fivespecsdev.schoolapp;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,6 +28,11 @@ public class Franzoesisch extends Activity implements ActionBar.OnNavigationList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_franzoesisch);
+
+        SharedPreferences myPreferences = this.getSharedPreferences("Preferences", MODE_PRIVATE);
+        final SharedPreferences.Editor editor = myPreferences.edit();
+        editor.putString("LastClass", "Franzoesisch");
+        editor.commit();
 
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayShowTitleEnabled(false);
@@ -145,6 +151,10 @@ public class Franzoesisch extends Activity implements ActionBar.OnNavigationList
                 startActivity(startKunst);
                 break;
             case 14:
+                SharedPreferences myPreferences = this.getSharedPreferences("Preferences", MODE_PRIVATE);
+                final SharedPreferences.Editor editor = myPreferences.edit();
+                editor.putString("LastClass", "Start");
+                editor.commit();
                 Intent startStart = new Intent(Franzoesisch.this, start.class);
                 startActivity(startStart);
                 break;
@@ -154,6 +164,15 @@ public class Franzoesisch extends Activity implements ActionBar.OnNavigationList
         return false;
     }
 
+
+    @Override
+    public void onResume() {
+        SharedPreferences myPreferences = this.getSharedPreferences("Preferences", MODE_PRIVATE);
+        final SharedPreferences.Editor editor = myPreferences.edit();
+        editor.putString("LastClass", "Franzoesisch");
+        editor.commit();
+        super.onResume();
+    }
 
     @Override
     public void onBackPressed() {

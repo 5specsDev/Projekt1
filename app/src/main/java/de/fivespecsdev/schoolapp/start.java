@@ -3,6 +3,7 @@ package de.fivespecsdev.schoolapp;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -18,6 +19,8 @@ public class start extends Activity implements ActionBar.OnNavigationListener {
     Button StartFolder;
     Button StartBook;
     Button StartHomework;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +84,70 @@ public class start extends Activity implements ActionBar.OnNavigationListener {
         });
 
     }
+
+
+    public void loadLastClass(String LastClass) {
+
+
+
+        if (LastClass == "Deutsch") {
+            Intent startLastClass = new Intent(start.this, Deutsch.class);
+            startActivity(startLastClass); }
+
+        if (LastClass == "Mathe") {
+            Intent startLastClass = new Intent(start.this, Mathe.class);
+            startActivity(startLastClass); }
+
+        if (LastClass == "English") {
+            Intent startLastClass = new Intent(start.this, English.class);
+            startActivity(startLastClass); }
+
+        if (LastClass == "Biologie") {
+            Intent startLastClass = new Intent(start.this, Biologie.class);
+            startActivity(startLastClass); }
+
+        if (LastClass == "Geographie") {
+            Intent startLastClass = new Intent(start.this, Geographie.class);
+            startActivity(startLastClass); }
+
+        if (LastClass == "Chemie") {
+            Intent startLastClass = new Intent(start.this, Chemie.class);
+            startActivity(startLastClass); }
+
+        if (LastClass == "Physik") {
+            Intent startLastClass = new Intent(start.this, Physik.class);
+            startActivity(startLastClass); }
+
+        if (LastClass == "Geschichte") {
+            Intent startLastClass = new Intent(start.this, Geschichte.class);
+            startActivity(startLastClass); }
+
+        if (LastClass == "Latein") {
+            Intent startLastClass = new Intent(start.this, Latein.class);
+            startActivity(startLastClass); }
+
+        if (LastClass == "Franzoesisch") {
+            Intent startLastClass = new Intent(start.this, Franzoesisch.class);
+            startActivity(startLastClass); }
+
+        if (LastClass == "Religion") {
+            Intent startLastClass = new Intent(start.this, Religion.class);
+            startActivity(startLastClass); }
+
+        if (LastClass == "Musik") {
+            Intent startLastClass = new Intent(start.this, Musik.class);
+            startActivity(startLastClass); }
+
+        if (LastClass == "Kunst") {
+            Intent startLastClass = new Intent(start.this, Kunst.class);
+            startActivity(startLastClass); }
+
+        if (LastClass == "Start") {}
+
+
+    }
+
+
 
 
     @Override
@@ -149,6 +216,14 @@ public class start extends Activity implements ActionBar.OnNavigationListener {
 
         }
         return false;
+    }
+
+    @Override
+    public void onResume(){
+        SharedPreferences myPreferences = getSharedPreferences("Preferences", MODE_PRIVATE);
+        String LastClass = myPreferences.getString("LastClass", "Start");
+        loadLastClass(LastClass);
+        super.onResume();
     }
 
     @Override

@@ -3,6 +3,7 @@ package de.fivespecsdev.schoolapp;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,11 +23,18 @@ public class Religion extends Activity implements ActionBar.OnNavigationListener
     Button StartBook;
     Button StartHomework;
     Button StartBibel;
-    
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_religion);
+
+        SharedPreferences myPreferences = this.getSharedPreferences("Preferences", MODE_PRIVATE);
+        final SharedPreferences.Editor editor = myPreferences.edit();
+        editor.putString("LastClass", "Religion");
+        editor.commit();
 
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayShowTitleEnabled(false);
@@ -146,6 +154,10 @@ public class Religion extends Activity implements ActionBar.OnNavigationListener
                 startActivity(startKunst);
                 break;
             case 14:
+                SharedPreferences myPreferences = this.getSharedPreferences("Preferences", MODE_PRIVATE);
+                final SharedPreferences.Editor editor = myPreferences.edit();
+                editor.putString("LastClass", "Start");
+                editor.commit();
                 Intent startStart = new Intent(Religion.this, start.class);
                 startActivity(startStart);
                 break;
@@ -155,7 +167,14 @@ public class Religion extends Activity implements ActionBar.OnNavigationListener
         return false;
     }
 
-    
+    @Override
+    public void onResume() {
+        SharedPreferences myPreferences = this.getSharedPreferences("Preferences", MODE_PRIVATE);
+        final SharedPreferences.Editor editor = myPreferences.edit();
+        editor.putString("LastClass", "Religion");
+        editor.commit();
+        super.onResume();
+    }
 
     @Override
     public void onBackPressed() {
