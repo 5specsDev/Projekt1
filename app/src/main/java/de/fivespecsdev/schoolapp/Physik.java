@@ -52,6 +52,7 @@ public class Physik extends Activity implements ActionBar.OnNavigationListener {
         StartTafel = (Button) findViewById(R.id.BtnStartTafel);
         StartTaschenrechner = (Button) findViewById(R.id.BtnStartTR);
 
+        /*
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,7 +60,7 @@ public class Physik extends Activity implements ActionBar.OnNavigationListener {
                 startActivity(openIPMSG);
             }
         });
-
+        */
 
 
         StartFolder.setOnClickListener(new View.OnClickListener() {

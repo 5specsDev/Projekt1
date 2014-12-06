@@ -50,6 +50,7 @@ public class Religion extends Activity implements ActionBar.OnNavigationListener
         StartHomework = (Button) findViewById(R.id.BtnStartCal);
         StartBibel = (Button) findViewById(R.id.BtnStartBibel);
 
+        /*
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,7 +58,7 @@ public class Religion extends Activity implements ActionBar.OnNavigationListener
                 startActivity(openIPMSG);
             }
         });
-
+        */
         
 
         StartFolder.setOnClickListener(new View.OnClickListener() {

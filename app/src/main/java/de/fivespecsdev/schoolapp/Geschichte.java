@@ -46,6 +46,7 @@ public class Geschichte extends Activity implements ActionBar.OnNavigationListen
         StartBook = (Button) findViewById(R.id.BtnStartBook);
         StartHomework = (Button) findViewById(R.id.BtnStartCal);
 
+        /*
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +54,7 @@ public class Geschichte extends Activity implements ActionBar.OnNavigationListen
                 startActivity(openIPMSG);
             }
         });
-
+        */
 
 
         StartFolder.setOnClickListener(new View.OnClickListener() {

@@ -48,6 +48,7 @@ public class Chemie extends Activity implements ActionBar.OnNavigationListener {
         StartHomework = (Button) findViewById(R.id.BtnStartCal);
         StartTafel = (Button) findViewById(R.id.BtnStartTafel);
 
+        /*
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +56,7 @@ public class Chemie extends Activity implements ActionBar.OnNavigationListener {
                 startActivity(openIPMSG);
             }
         });
-
+        */
 
 
         StartFolder.setOnClickListener(new View.OnClickListener() {

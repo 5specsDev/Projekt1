@@ -18,7 +18,8 @@ public class AppLockerService extends Service {
     String[] blacklistedApps = {"com.android.settings", "com.android.browser", "com.vlingo.midas", "com.google.android.googlequicksearchbox",
                                 "com.sec.chaton", "com.sec.android.app.samsungapps", "com.android.vending", "com.google.android.youtube",
                                 "com.android.chrome","com.android.email", "com.sec.android.apps.gamehub", "com.google.android.gm",
-                                "com.google.android.play.games", "com.sec.android.apps.launcher"};
+                                "com.google.android.play.games", "com.sec.android.apps.launcher", "com.sec.android.app.controlpanel",
+                                "com.sec.android.app.snotebook", "com.sec.android.provider.snote"};
 
     TimerTask mTimerTask;
 

@@ -50,6 +50,7 @@ public class Biologie extends Activity implements ActionBar.OnNavigationListener
         StartTafel = (Button) findViewById(R.id.BtnStartTafel);
         StartICell = (Button) findViewById(R.id.BtnStartICell);
 
+        /*
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,7 +58,7 @@ public class Biologie extends Activity implements ActionBar.OnNavigationListener
                 startActivity(openIPMSG);
             }
         });
-
+        */
 
 
         StartFolder.setOnClickListener(new View.OnClickListener() {

@@ -44,6 +44,7 @@ public class Musik extends Activity implements ActionBar.OnNavigationListener {
         StartBook = (Button) findViewById(R.id.BtnStartBook);
         StartHomework = (Button) findViewById(R.id.BtnStartCal);
 
+        /*
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +52,7 @@ public class Musik extends Activity implements ActionBar.OnNavigationListener {
                 startActivity(openIPMSG);
             }
         });
-
+        */
 
 
         StartFolder.setOnClickListener(new View.OnClickListener() {

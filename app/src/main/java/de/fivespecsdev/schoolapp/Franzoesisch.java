@@ -48,6 +48,7 @@ public class Franzoesisch extends Activity implements ActionBar.OnNavigationList
         StartHomework = (Button) findViewById(R.id.BtnStartCal);
         StartWörterbuchFranzoesisch = (Button) findViewById(R.id.BtnStartWBuchFranz);
 
+        /*
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +56,7 @@ public class Franzoesisch extends Activity implements ActionBar.OnNavigationList
                 startActivity(openIPMSG);
             }
         });
-
+        */
 
 
         StartFolder.setOnClickListener(new View.OnClickListener() {

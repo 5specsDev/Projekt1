@@ -43,6 +43,7 @@ public class start extends Activity implements ActionBar.OnNavigationListener {
         StartBook = (Button) findViewById(R.id.BtnStartBook);
         StartHomework = (Button) findViewById(R.id.BtnStartCal);
 
+        /*
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,6 +51,7 @@ public class start extends Activity implements ActionBar.OnNavigationListener {
                 startActivity(openIPMSG);
             }
         });
+        */
 
         AdminAccess.setOnClickListener(new View.OnClickListener() {
             @Override

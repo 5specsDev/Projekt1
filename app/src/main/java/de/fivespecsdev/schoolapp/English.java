@@ -48,6 +48,7 @@ public class English extends Activity implements ActionBar.OnNavigationListener 
         StartHomework = (Button) findViewById(R.id.BtnStartCal);
         StartWörterbuchEnglish = (Button) findViewById(R.id.BtnStartWBuchEng);
 
+        /*
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +56,7 @@ public class English extends Activity implements ActionBar.OnNavigationListener 
                 startActivity(openIPMSG);
             }
         });
-
+        */
 
 
         StartFolder.setOnClickListener(new View.OnClickListener() {

@@ -48,6 +48,7 @@ public class Geographie extends Activity implements ActionBar.OnNavigationListen
         StartHomework = (Button) findViewById(R.id.BtnStartCal);
         StartEarth = (Button) findViewById(R.id.BtnStartEarth);
 
+        /*
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +56,7 @@ public class Geographie extends Activity implements ActionBar.OnNavigationListen
                 startActivity(openIPMSG);
             }
         });
-
+        */
 
 
         StartFolder.setOnClickListener(new View.OnClickListener() {

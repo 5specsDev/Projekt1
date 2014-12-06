@@ -44,6 +44,7 @@ public class Kunst extends Activity implements ActionBar.OnNavigationListener {
         StartHomework = (Button) findViewById(R.id.BtnStartCal);
         StartPSTouch = (Button) findViewById(R.id.BtnStartPhotoshop);
 
+        /*
         StartIPMSG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +52,7 @@ public class Kunst extends Activity implements ActionBar.OnNavigationListener {
                 startActivity(openIPMSG);
             }
         });
-
+        */
 
 
         StartFolder.setOnClickListener(new View.OnClickListener() {
